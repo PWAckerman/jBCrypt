@@ -717,7 +717,7 @@ public class BCrypt {
 
 		random.nextBytes(rnd);
 
-		rs.append("$2a$");
+		rs.append("$2b$");
 		if (log_rounds < 10)
 			rs.append("0");
 		if (log_rounds > 30) {
